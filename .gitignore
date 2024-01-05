@@ -1,0 +1,7 @@
+# Carpetas
+datos/
+videosPrueba/
+
+# Archivos
+*.mp4
+*.xml
