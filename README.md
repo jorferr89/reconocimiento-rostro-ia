@@ -68,10 +68,8 @@ Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para 
 
 ## Bibliografía
 
-Reconocimiento Facial | Python - OpenCV. Facebook. Youtube. Recuperado de: https://www.youtube.com/watch?v=cZkpaL36fW4 [03/01/2024].
-
-OpenCV - Face Recognition with OpenCV. OpenCV. Recuperado de: https://docs.opencv.org/4.2.0/da/d60/tutorial_face_main.html [03/01/2024].
-
-OpenCV - cv::face::LBPHFaceRecognizer Class Reference. Recuperado de: https://docs.opencv.org/3.4/df/d25/classcv_1_1face_1_1LBPHFaceRecognizer.html [04/01/2024].
-
-Consultas sobre el código a ChatGPT. Recuperado de: https://openai.com/blog/chatgpt [05/01/2024].
+* Reconocimiento Facial | Python - OpenCV. Facebook. Youtube. Recuperado de: https://www.youtube.com/watch?v=cZkpaL36fW4 [03/01/2024].
+* OpenCV - Face Recognition with OpenCV. OpenCV. Recuperado de: https://docs.opencv.org/4.2.0/da/d60/tutorial_face_main.html [03/01/2024].
+* OpenCV - cv::face::LBPHFaceRecognizer Class Reference. Recuperado de: https://docs.opencv.org/3.4/df/d25/classcv_1_1face_1_1LBPHFaceRecognizer.html [04/01/2024].
+* Consultas a ChatGPT. Recuperado de: https://openai.com/blog/chatgpt [05/01/2024].
+* Comprendiendo el reconocimiento facial mediante el algoritmo LBPH. Analytics Vidhya. Recuperado de: https://www.analyticsvidhya.com/blog/2021/07/understanding-face-recognition-using-lbph-algorithm/ [06/01/2024].
