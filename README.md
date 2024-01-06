@@ -10,6 +10,10 @@ Autor: Jorge Fernando Rodriguez - LS00339
 
 En este proyecto se realiza Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH).
 
+En primer lugar se recolectarán los datos (los rostros de las personas que se desee reconocer), luego entrenaremos el clasificador, para finalmente realizar las pruebas.
+
+## Marco Teórico
+
 ### Python
 
 Python es un lenguaje de programación popular y de alto nivel. Es conocido por su sintaxis clara y legible, lo que facilita escribir y entender código. Python es versátil y se utiliza en una variedad de campos, como desarrollo web, inteligencia artificial, análisis de datos y automatización de tareas.
@@ -24,32 +28,40 @@ OpenCV es un "kit de herramientas" para trabajar con imágenes y videos en una c
 
 El método LBPH es una forma de enseñar a una computadora a reconocer caras en imágenes. En lugar de mirar los colores de la imagen, LBPH se enfoca en los patrones pequeños y detalles, como las texturas en la cara. Divide la cara en pedazos pequeños y comparas cómo se ven esos pedazos. Luego, se utiliza esta información para decirle a la computadora cómo es la cara de alguien. Es una forma efectiva de hacer que una computadora aprenda a reconocer rostros en fotos.
 
-## Descripción de Carpetas y Archivos 
+Es más robusto ante cambios de iluminación. La idea es no mirar la imagen completa como un vector de alta dimensión, sino describir solo las características locales de un objeto. 
 
-En un directorio, se crearon las siguientes carpetas:
+Algunas consideraciones: 
+* Las imágenes de entrenamiento como de predicción deben estar en escala de grises. 
+* No se tiene especificaciones sobre el tamaño de las imágenes correspondientes a los rostros.
 
-* "datos" para almacenar los rostros de las personas que se desean reconocer.
-* "videosPrueba" que contiene los videos con los cuales se probará el reconocimiento.
+## Creación de la Base de datos con los rostros
 
-Del video llamado "Jorge-Entrenamiento.mp4" se obtienen los rostros para el entrenamiento. 
+Para la realización del reconocimiento facial se necesiraán los rostros de las personas que deseemos reconocer. Es recomendable que se realice la recolección de estas imágenes en el escenario o ambiente en donde se vaya a aplicar el reconocimiento facial, tener en cuenta variaciones de condiciones de luz, que las personas lleven o que no lentes, incluso que cierren o guiñen un ojo. Toda esta variedad de imágenes que se obtenga de los rostros contribuirá al desempeño del algoritmo.
 
-### Archivos
+[ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/capturaRostro.py)
 
-* capturaRostro.py: Script para capturar los rostros de las personas que se desea reconocer (lo que posteriormente será la base de datos). 
-* entrenamientoLBPH.py: Entrenamiento del método Local Binary Patterns Histograms (LBPH). Luego del entrenamiento, se obtiene un modelo y se lo almacena.
-* reconocimientoFacial.py: Lectura del modelo y prueba del reconocimiento facial. 
+### Prueba
 
-![Listado de Carpetas y Archivos](/capturasDePantalla/lista-carpetas-archivos.jpg)
-
-## Pruebas
-
-capturaRostro.py
 ![Captura Rostro](/capturasDePantalla/captura-rostro.jpg)
 
-entrenamientoLBPH.py
-![Captura Rostro](/capturasDePantalla/entrenamiento.jpg)
+## Preparación de los datos, Entrenamiento y Almacenamiento del Modelo
 
-reconocimientoFacial.py
+Antes de proceder con el entrenamiento es necesario asociar una etiqueta a cada persona (entrenamiento supervisado). Ejemplo: cuando leamos la carpeta ‘Persona 1’ todas esas imágenes se les asignará etiqueta 0, luego a todas imágenes de los rostros de ‘Persona 2’ se asignará 1,  de ‘Persona 3’ se asignará 2, y así sucesivamente. Con cada etiqueta la computadora sabrá que las imágenes pertenecen a personas distintas. El código está preparado para entrenarlo con más de una persona, pero las pruebas serán realizadas para que me reconozca unicamente a mí.
+
+Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para leerlo en otro script, y nos ahorramos de volver a entrenarlo.
+
+[ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/entrenamientoLBPH.py)
+
+### Prueba
+
+![Entrenamiento](/capturasDePantalla/entrenamiento.jpg)
+
+## Reconocimiento
+
+[ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/reconocimientoFacial.py)
+
+### Prueba
+
 ![Captura Rostro](/capturasDePantalla/reconocimiento-jorge.jpg)
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-desconocido.jpg)
@@ -63,19 +75,3 @@ OpenCV - Face Recognition with OpenCV. OpenCV. Recuperado de: https://docs.openc
 OpenCV - cv::face::LBPHFaceRecognizer Class Reference. Recuperado de: https://docs.opencv.org/3.4/df/d25/classcv_1_1face_1_1LBPHFaceRecognizer.html [04/01/2024].
 
 Consultas sobre el código a ChatGPT. Recuperado de: https://openai.com/blog/chatgpt [05/01/2024].
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
