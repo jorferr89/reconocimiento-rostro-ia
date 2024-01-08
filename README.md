@@ -1,10 +1,8 @@
-# Trabajo Integrador 
+# Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH) 
 
 ### Materia: Inteligencia Artificial y Sistemas Expertos
 
 ### Año: 2024
-
-### Tema: Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH)
 
 ### Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
 
@@ -77,6 +75,12 @@ Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-jorge.jpg)
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-desconocido.jpg)
+
+## Conclusión
+
+El reconocimiento facial mediante el uso de Python, OpenCV y el método Local Binary Patterns Histograms (LBPH) ofrece una solución efectiva y eficiente para identificar rostros en imágenes. Esta técnica proporciona una representación robusta de las texturas faciales, lo que resulta en un sistema preciso y rápido.
+
+Como posible investigación futura, se podría explorar la implementación de este proyecto con una ESP32-CAM. La combinación de la ESP32-CAM con el código Python desarrollado para el reconocimiento facial brinda la oportunidad de construir sistemas compactos y autónomos, los cuales pueden integrarse en diversas aplicaciones, como la seguridad en el hogar, el control de acceso o incluso la automatización de procesos.
 
 ## Bibliografía
 
