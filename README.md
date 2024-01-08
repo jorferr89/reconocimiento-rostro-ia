@@ -1,14 +1,14 @@
 # Trabajo Integrador 
 
-#### Materia: Inteligencia Artificial y Sistemas Expertos
+### Materia: Inteligencia Artificial y Sistemas Expertos
 
-#### Año: 2024
+### Año: 2024
 
-#### Tema: Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH)
+### Tema: Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH)
 
-#### Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
+### Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
 
-#### Autor: Jorge Fernando Rodriguez - LS00339
+### Autor: Jorge Fernando Rodriguez - LS00339
 
 ## Introducción
 
@@ -32,6 +32,8 @@ OpenCV es un "kit de herramientas" para trabajar con imágenes y videos en una c
 
 Es una herramienta para encontrar objetos específicos en imágenes, como por ejemplo, rostros. Funciona entrenando a la computadora con ejemplos de imágenes que tienen rostros y otras que no. Después de ese entrenamiento, la computadora puede buscar rostros en nuevas imágenes.
 
+[ver más detalles](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/HaarCascades-RodriguezJorgeFernando.pdf)
+
 ### Local Binary Patterns Histograms (LBPH)
 
 El método LBPH es una forma de enseñar a una computadora a reconocer caras en imágenes. En lugar de mirar los colores de la imagen, LBPH se enfoca en los patrones pequeños y detalles, como las texturas en la cara. Divide la cara en pedazos pequeños y comparas cómo se ven esos pedazos. Luego, se utiliza esta información para decirle a la computadora cómo es la cara de alguien. Es una forma efectiva de hacer que una computadora aprenda a reconocer rostros en fotos.
@@ -41,6 +43,8 @@ Es más robusto ante cambios de iluminación. La idea es no mirar la imagen comp
 Algunas consideraciones: 
 * Las imágenes de entrenamiento como de predicción deben estar en escala de grises. 
 * No se tiene especificaciones sobre el tamaño de las imágenes correspondientes a los rostros.
+
+[ver más detalles](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/LBPH-RodriguezJorgeFernando.pdf)
 
 ## Creación de la Base de datos con los rostros
 
