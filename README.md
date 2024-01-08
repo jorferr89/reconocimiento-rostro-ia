@@ -1,10 +1,14 @@
-# Trabajo Integrador Inteligencia Artificial y Sistemas Expertos
+# Trabajo Integrador 
 
-## Tema: Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH)
+#### Materia: Inteligencia Artificial y Sistemas Expertos
 
-Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
+#### Año: 2024
 
-Autor: Jorge Fernando Rodriguez - LS00339
+#### Tema: Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH)
+
+#### Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
+
+#### Autor: Jorge Fernando Rodriguez - LS00339
 
 ## Introducción
 
@@ -23,6 +27,10 @@ Una de las fortalezas de Python es su comunidad activa y amplia biblioteca está
 ### OpenCV
 
 OpenCV es un "kit de herramientas" para trabajar con imágenes y videos en una computadora. Ayuda a detectar objetos, seguir movimientos o reconocer caras en fotos y videos. Es muy popular porque es fácil de usar y tiene muchas funciones útiles.
+
+### Haar Cascades 
+
+Es una herramienta para encontrar objetos específicos en imágenes, como por ejemplo, rostros. Funciona entrenando a la computadora con ejemplos de imágenes que tienen rostros y otras que no. Después de ese entrenamiento, la computadora puede buscar rostros en nuevas imágenes.
 
 ### Local Binary Patterns Histograms (LBPH)
 
@@ -68,7 +76,8 @@ Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para 
 
 ## Bibliografía
 
-* Reconocimiento Facial | Python - OpenCV. Facebook. Youtube. Recuperado de: https://www.youtube.com/watch?v=cZkpaL36fW4 [03/01/2024].
+* DETECCIÓN DE ROSTROS con Haar Cascades Python – OpenCV. Youtube. Recuperado de: https://www.youtube.com/watch?v=J1jlm-I1cTs [03/01/2024].
+* Reconocimiento Facial | Python - OpenCV. Youtube. Recuperado de: https://www.youtube.com/watch?v=cZkpaL36fW4 [03/01/2024].
 * OpenCV - Face Recognition with OpenCV. OpenCV. Recuperado de: https://docs.opencv.org/4.2.0/da/d60/tutorial_face_main.html [03/01/2024].
 * OpenCV - cv::face::LBPHFaceRecognizer Class Reference. Recuperado de: https://docs.opencv.org/3.4/df/d25/classcv_1_1face_1_1LBPHFaceRecognizer.html [04/01/2024].
 * Consultas a ChatGPT. Recuperado de: https://openai.com/blog/chatgpt [05/01/2024].
