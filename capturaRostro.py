@@ -32,7 +32,11 @@ while True:
         break
 
     # Redimensionar el fotograma
-    frame = imutils.resize(frame, width=640)
+    scale_percent = 50
+    width = int(frame.shape[1] * scale_percent / 100)
+    height = int(frame.shape[0] * scale_percent / 100)
+    dim = (width, height)
+    frame = cv2.resize(frame, dim, interpolation=cv2.INTER_AREA)
 
     # Convertir el fotograma a escala de grises para la detección de rostros
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
