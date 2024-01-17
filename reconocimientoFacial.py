@@ -11,7 +11,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('modeloLBPHFace.xml')
 
 # Configurar la captura de video desde un archivo de video
-cap = cv2.VideoCapture('videosPrueba/Jorge-Prueba.mp4')
+cap = cv2.VideoCapture('videosPrueba/Desconocido-Prueba.mp4')
 
 # Clasificador de cascada para la detección de rostros
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -52,8 +52,8 @@ while True:
 
         # Verificar la confianza de la predicción
 
-        # Si la confianza de la predicción es menor a 70 (umbral de confianza), se considera una predicción válida
-        if result[1] < 70:
+        # Si la confianza de la predicción es menor a 50 (umbral de confianza), se considera una predicción válida
+        if result[1] < 50:
             cv2.putText(frame, '{}'.format(imagePaths[result[0]]), (x, y-25), 2, 1.1, (0, 255, 0), 1, cv2.LINE_AA)
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
          # Si la confianza es mayor o igual a 70, la persona es considerada desconocida
