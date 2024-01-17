@@ -11,7 +11,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('modeloLBPHFace.xml')
 
 # Configurar la captura de video desde un archivo de video
-cap = cv2.VideoCapture('videosPrueba/Desconocido-Prueba.mp4')
+cap = cv2.VideoCapture('videosPrueba/Jorge-Prueba.mp4')
 
 # Clasificador de cascada para la detección de rostros
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
