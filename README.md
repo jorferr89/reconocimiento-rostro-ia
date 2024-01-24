@@ -38,15 +38,11 @@ El método LBPH es una forma de enseñar a una computadora a reconocer caras en 
 
 Es más robusto ante cambios de iluminación. La idea es no mirar la imagen completa como un vector de alta dimensión, sino describir solo las características locales de un objeto. 
 
-Algunas consideraciones: 
-* Las imágenes de entrenamiento como de predicción deben estar en escala de grises. 
-* No se tiene especificaciones sobre el tamaño de las imágenes correspondientes a los rostros.
-
 [ver más detalles](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/LBPH-RodriguezJorgeFernando.pdf)
 
 ## Creación de la Base de datos con los rostros
 
-Para la realización del reconocimiento facial se necesiraán los rostros de las personas que deseemos reconocer. Es recomendable que se realice la recolección de estas imágenes en el escenario o ambiente en donde se vaya a aplicar el reconocimiento facial, tener en cuenta variaciones de condiciones de luz, que las personas lleven o que no lentes, incluso que cierren o guiñen un ojo. Toda esta variedad de imágenes que se obtenga de los rostros contribuirá al desempeño del algoritmo.
+Para la realización del reconocimiento facial se necesitarán los rostros de las personas que deseemos reconocer. Es recomendable que se realice la recolección de estas imágenes en el escenario o ambiente en donde se vaya a aplicar el reconocimiento facial, tener en cuenta variaciones de condiciones de luz, que las personas lleven o que no lentes, incluso que cierren o guiñen un ojo. Toda esta variedad de imágenes que se obtenga de los rostros contribuirá al desempeño del algoritmo.
 
 [ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/capturaRostro.py)
 

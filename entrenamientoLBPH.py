@@ -5,9 +5,9 @@ import numpy as np
 # Ruta donde se encuentran los datos de entrenamiento
 dataPath = 'D:/INTEGRADOR-IA/datos'
 
-# Lista de personas en el conjunto de datos
+# Listado de personas para reconocimiento
 peopleList = os.listdir(dataPath)
-print('Lista de personas: ', peopleList)
+# print('Listado de personas: ', peopleList)
 
 # Listas para almacenar etiquetas y datos de rostros
 labels = []
