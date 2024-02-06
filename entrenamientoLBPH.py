@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 # Ruta donde se encuentran los datos de entrenamiento
-dataPath = 'D:/INTEGRADOR-IA/datos'
+dataPath = 'ruta/datos'
 
 # Listado de personas para reconocimiento
 peopleList = os.listdir(dataPath)

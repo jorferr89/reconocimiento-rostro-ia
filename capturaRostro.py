@@ -6,7 +6,7 @@ import imutils
 personName = 'Jorge'
 
 # Ruta donde se guardarán los datos
-dataPath = 'D:/INTEGRADOR-IA/datos'
+dataPath = 'ruta/datos'
 personPath = dataPath + '/' + personName
 
 # Verificar si la carpeta para la persona existe, si no, crearla
@@ -16,7 +16,7 @@ if not os.path.exists(personPath):
 
 # Configurar la captura de video desde la cámara o un archivo de video
 # cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-cap = cv2.VideoCapture('Jorge-Entrenamiento.mp4')
+cap = cv2.VideoCapture('ruta/archivo/video/captura.mp4')
 
 # Cargar el clasificador de cascada para la detección de rostros
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -65,7 +65,7 @@ while True:
 
     # Esperar una tecla (1 milisegundo) y verificar si se presionó 'Esc' o se capturaron más de 300 rostros
     k = cv2.waitKey(1)
-    if k == 27 or count >= 300:
+    if k == 27 or count >= 600:
         break
 
 # Liberar la captura de video y cerrar las ventanas de OpenCV

@@ -1,12 +1,12 @@
 # Reconocimiento Facial con el lenguaje Python usando OpenCV y el método Local Binary Patterns Histograms (LBPH) 
 
-### Materia: Inteligencia Artificial y Sistemas Expertos
+## Materia: Inteligencia Artificial y Sistemas Expertos
 
-### Año: 2024
+## Año: 2024
 
-### Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
+## Profesoras: Alice Raquel Rambo y Graciela Sandra Zacharski
 
-### Autor: Jorge Fernando Rodriguez - LS00339
+## Autor: Jorge Fernando Rodriguez - LS00339
 
 ## Introducción
 
@@ -36,7 +36,7 @@ Es una herramienta para encontrar objetos específicos en imágenes, como por ej
 
 El método LBPH es una forma de enseñar a una computadora a reconocer caras en imágenes. En lugar de mirar los colores de la imagen, LBPH se enfoca en los patrones pequeños y detalles, como las texturas en la cara. Divide la cara en pedazos pequeños y comparas cómo se ven esos pedazos. Luego, se utiliza esta información para decirle a la computadora cómo es la cara de alguien. Es una forma efectiva de hacer que una computadora aprenda a reconocer rostros en fotos.
 
-Es más robusto ante cambios de iluminación. La idea es no mirar la imagen completa como un vector de alta dimensión, sino describir solo las características locales de un objeto. 
+La idea es no mirar la imagen completa como un vector de alta dimensión, sino describir solo las características locales de un objeto. 
 
 [ver más detalles](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/LBPH-RodriguezJorgeFernando.pdf)
 
@@ -46,19 +46,21 @@ Para la realización del reconocimiento facial se necesitarán los rostros de la
 
 [ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/capturaRostro.py)
 
-### Prueba
+### Captura de pantalla
 
 ![Captura Rostro](/capturasDePantalla/captura-rostro.jpg)
 
+![Captura Rostro](/capturasDePantalla/captura-rostro-cuerpo-entero.jpg)
+
 ## Preparación de los datos, Entrenamiento y Almacenamiento del Modelo
 
-Antes de proceder con el entrenamiento es necesario asociar una etiqueta a cada persona (entrenamiento supervisado). Ejemplo: cuando leamos la carpeta ‘Persona 1’ todas esas imágenes se les asignará etiqueta 0, luego a todas imágenes de los rostros de ‘Persona 2’ se asignará 1,  de ‘Persona 3’ se asignará 2, y así sucesivamente. Con cada etiqueta la computadora sabrá que las imágenes pertenecen a personas distintas. El código está preparado para entrenarlo con más de una persona, pero las pruebas serán realizadas para que me reconozca unicamente a mí.
+Antes de proceder con el entrenamiento es necesario asociar una etiqueta a cada persona (entrenamiento supervisado). Ejemplo: cuando leamos la carpeta ‘Persona 1’ todas esas imágenes se les asignará etiqueta 0, luego a todas imágenes de los rostros de ‘Persona 2’ se asignará 1,  de ‘Persona 3’ se asignará 2, y así sucesivamente. Con cada etiqueta la computadora sabrá que las imágenes pertenecen a personas distintas. El código está preparado para entrenarlo con más de una persona, pero las pruebas serán realizadas para que me reconozca únicamente a mí.
 
-Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para leerlo en otro script, y nos ahorramos de volver a entrenarlo.
+Una vez entrenado el modelo, se lo puede almacenar, para leerlo en otro script, y nos ahorramos de volver a entrenarlo.
 
 [ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/entrenamientoLBPH.py)
 
-### Prueba
+### Captura de pantalla
 
 ![Entrenamiento](/capturasDePantalla/entrenamiento.jpg)
 
@@ -66,9 +68,29 @@ Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para 
 
 [ver código](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/reconocimientoFacial.py)
 
-### Prueba
+### Capturas de pantalla
+
+#### Con el mismo video que se utilizó para el entrenamiento
+
+El reconocimiento con el mismo video que se entrenó funcionó con la confianza de predicción (umbral de 70).
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-jorge.jpg)
+
+#### Con otro video
+
+El reconocimiento con otro video funcionó con la confianza de predicción (umbral de 70).
+
+![Captura Rostro](/capturasDePantalla/reconocimiento2-jorge.jpg)
+
+Con el video de cuerpo entero, el valor de confianza se debió modificar, ya que se utilizó otro fondo y otra luminocidad, pero se notó problemas al comparar el rostro entrenado con el del desconocido (varias veces se reconoció erroreamente).
+
+![Captura Rostro](/capturasDePantalla/reconocimiento3-jorge.jpg)
+
+Nota: para el óptimo funcionamiento del reconocimiento con LBPH, se debe capturar y entrenar rostros con imágenes que no sean de cuerpo entero, en el ambiente donde se desea realizar el reconocimiento y con la luminocidad adecuada.
+
+#### Con un rostro desconocido
+
+El reconocimiento con un video de un desconocido funcionó con la confianza de predicción (umbral de 70).
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-desconocido.jpg)
 
@@ -76,7 +98,7 @@ Una vez entrenado el modelo, se lo puede almacenar. ¿Para qué nos sirve? Para 
 
 El reconocimiento facial mediante el uso de Python, OpenCV y el método Local Binary Patterns Histograms (LBPH) ofrece una solución efectiva y eficiente para identificar rostros en imágenes. Esta técnica proporciona una representación robusta de las texturas faciales, lo que resulta en un sistema preciso y rápido.
 
-Como posible investigación futura, se podría explorar la implementación de este proyecto con una ESP32-CAM. La combinación de la ESP32-CAM con el código Python desarrollado para el reconocimiento facial brinda la oportunidad de construir sistemas compactos y autónomos, los cuales pueden integrarse en diversas aplicaciones, como la seguridad en el hogar, el control de acceso o incluso la automatización de procesos.
+Como posible investigación futura, se podría explorar la implementación de este proyecto con una ESP32-CAM. La combinación de la ESP32-CAM con el código Python desarrollado para el reconocimiento facial brinda la oportunidad de construir sistemas compactos y autónomos, los cuales pueden integrarse en diversas aplicaciones, como la seguridad en el hogar, el control de acceso, etc.
 
 ## Bibliografía
 

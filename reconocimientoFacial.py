@@ -2,7 +2,7 @@ import cv2
 import os
 
 # Ruta donde se encuentran los datos
-dataPath = 'D:/INTEGRADOR-IA/datos'
+dataPath = 'ruta/datos'
 # Obtener la lista de imágenes en el directorio
 imagePaths = os.listdir(dataPath)
 
@@ -11,7 +11,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('modeloLBPHFace.xml')
 
 # Configurar la captura de video desde un archivo de video
-cap = cv2.VideoCapture('videosPrueba/Jorge-Prueba.mp4')
+cap = cv2.VideoCapture('ruta/archivo/video/reconocimiento.mp4')
 
 # Clasificador de cascada para la detección de rostros
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -52,11 +52,11 @@ while True:
 
         # Verificar la confianza de la predicción
 
-        # Si la confianza de la predicción es menor a 50 (umbral de confianza), se considera una predicción válida
-        if result[1] < 50:
+        # Si la confianza de la predicción es menor a 70 (umbral de confianza), se considera una predicción válida
+        if result[1] < 70:
             cv2.putText(frame, '{}'.format(imagePaths[result[0]]), (x, y-25), 2, 1.1, (0, 255, 0), 1, cv2.LINE_AA)
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-         # Si la confianza es mayor o igual a 70, la persona es considerada desconocida
+         # Si la confianza es mayor o igual, la persona es considerada desconocida
         else:
             cv2.putText(frame, 'Desconocido', (x, y-20), 2, 0.8, (0, 0, 255), 1, cv2.LINE_AA)
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
