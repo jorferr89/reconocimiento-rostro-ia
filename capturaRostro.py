@@ -65,7 +65,7 @@ while True:
 
     # Esperar una tecla (1 milisegundo) y verificar si se presionó 'Esc' o se capturaron más de 300 rostros
     k = cv2.waitKey(1)
-    if k == 27 or count >= 600:
+    if k == 27 or count >= 300:
         break
 
 # Liberar la captura de video y cerrar las ventanas de OpenCV
