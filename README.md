@@ -94,6 +94,8 @@ El reconocimiento con un video de un desconocido funcionó con la confianza de p
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento-desconocido.jpg)
 
+[ver archivo con correcciones realizadas en día 6/2](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/Anexo-Correcciones-RodriguezJorgeFernando.pdf)
+
 ## Conclusión
 
 El reconocimiento facial mediante el uso de Python, OpenCV y el método Local Binary Patterns Histograms (LBPH) ofrece una solución efectiva y eficiente para identificar rostros en imágenes. Esta técnica proporciona una representación robusta de las texturas faciales, lo que resulta en un sistema preciso y rápido.
