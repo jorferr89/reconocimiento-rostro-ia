@@ -82,7 +82,7 @@ El reconocimiento con otro video funcionó con la confianza de predicción (umbr
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento2-jorge.jpg)
 
-Con el video de cuerpo entero, el valor de confianza se debió modificar, ya que se utilizó otro fondo y otra luminocidad, pero se notó problemas al comparar el rostro entrenado con el del desconocido (varias veces se reconoció erroreamente).
+Con el video de cuerpo entero, el valor de confianza se debió modificar, ya que se utilizó otro fondo y otra luminocidad, pero se notó problemas al comparar el rostro entrenado con el del desconocido (se reconoció erroreamente).
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento3-jorge.jpg)
 
