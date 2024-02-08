@@ -32,6 +32,8 @@ Es una herramienta para encontrar objetos específicos en imágenes, como por ej
 
 [ver más detalles](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/anexos/HaarCascades-RodriguezJorgeFernando.pdf)
 
+[ver ejemplo de detección de rostros de varias personas](https://github.com/jorferr89/reconocimiento-rostro-ia/blob/main/haarcascades-anexo/prueba.py)
+
 ### Local Binary Patterns Histograms (LBPH)
 
 El método LBPH es una forma de enseñar a una computadora a reconocer caras en imágenes. En lugar de mirar los colores de la imagen, LBPH se enfoca en los patrones pequeños y detalles, como las texturas en la cara. Divide la cara en pedazos pequeños y comparas cómo se ven esos pedazos. Luego, se utiliza esta información para decirle a la computadora cómo es la cara de alguien. Es una forma efectiva de hacer que una computadora aprenda a reconocer rostros en fotos.
@@ -82,7 +84,7 @@ El reconocimiento con otro video funcionó con la confianza de predicción (umbr
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento2-jorge.jpg)
 
-Con el video de cuerpo entero, el valor de confianza se debió modificar, ya que se utilizó otro fondo y otra luminocidad, pero se notó problemas al comparar el rostro entrenado con el del desconocido (se reconoció erroreamente).
+Con el video de cuerpo entero se notó problemas al realizar el reconocimiento, ya que la confianza de predicción superaba el valor de 100. El reconocimiento no era correcto.
 
 ![Captura Rostro](/capturasDePantalla/reconocimiento3-jorge.jpg)
 
@@ -100,7 +102,7 @@ El reconocimiento con un video de un desconocido funcionó con la confianza de p
 
 El reconocimiento facial mediante el uso de Python, OpenCV y el método Local Binary Patterns Histograms (LBPH) ofrece una solución efectiva y eficiente para identificar rostros en imágenes. Esta técnica proporciona una representación robusta de las texturas faciales, lo que resulta en un sistema preciso y rápido.
 
-Como posible investigación futura, se podría explorar la implementación de este proyecto con una ESP32-CAM. La combinación de la ESP32-CAM con el código Python desarrollado para el reconocimiento facial brinda la oportunidad de construir sistemas compactos y autónomos, los cuales pueden integrarse en diversas aplicaciones, como la seguridad en el hogar, el control de acceso, etc.
+Como posible investigación futura, se podría explorar la implementación de este proyecto con una ESP32-CAM. La combinación de la ESP32-CAM con el código Python desarrollado para el reconocimiento facial brinda la oportunidad de construir sistemas compactos y autónomos, los cuales pueden integrarse en diversas aplicaciones, como el control de acceso, etc.
 
 ## Bibliografía
 
